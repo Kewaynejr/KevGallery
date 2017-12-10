@@ -1,0 +1,25 @@
+<% include ../partials/header %>
+
+<h1>Edit Post</h1>
+
+<form action="/gallery/<%= post._id %>?_method=PUT" method="POST">
+    <div class="field">
+        <label>Title</label>
+        <input type="text" name="post[title]" value="<%= post.title %>">
+    </div>
+    <div class="field">
+        <label>Image</label>
+        <input type="text" name="post[image]" value="<%= post.image %>">
+    </div>
+    <div class="field">
+        <label>Description</label>
+        <input type="text" name="post[description]" value="<%= post.description %>">
+    </div>
+    <div class="field">
+        <label>Content</label>
+        <textarea name="post[body]"><%= post.body %></textarea>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+
+<% include ../partials/footer %>
