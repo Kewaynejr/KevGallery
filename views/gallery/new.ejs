@@ -2,13 +2,23 @@
 
 <h1>New Post Form</h1>
 <form action="/gallery" method="POST">
-
-	<input type="text" name="post[title]" placeholder="Post Title">
-	<input type="text" name="post[image]" placeholder="Post Image URL">
-	<input type="text" name="post[description]" placeholder="Post Description">
-	<textarea name="post[body]"></textarea>
-	<button>Submit</button>
-
+    <div class="field">
+        <label>Title</label>
+        <input type="text" name="post[title]" placeholder="Post Title">
+    </div>
+    <div class="field">
+        <label>Image</label>
+        <input type="text" name="post[image]" placeholder="Post Image URL">
+    </div>
+    <div class="field">
+        <label>Description</label>
+        <input type="text" name="post[description]" placeholder="Post Description">
+    </div>
+    <div class="field">
+        <label>Content</label>
+        <textarea name="post[body]"></textarea>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Submit">
 </form>
 
 <% include ../partials/footer %>

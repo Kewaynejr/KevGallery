@@ -47,43 +47,15 @@
 	<hr>
 
 	<div class="row">
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/blueshirt-blackbag.jpg" onclick="openModal();currentSlide(1)" alt="bookbag" class="img-thumbnail hover-shadow cursor">
-		</div>
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/black-white.jpg" onclick="openModal();currentSlide(2)" alt="blackStreet" class="img-thumbnail hover-shadow cursor">
-		</div>
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/city-lights.jpg" onclick="openModal();currentSlide(3)" alt="City" class="img-thumbnail hover-shadow cursor">
-		</div>
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/chair-computer.jpg" onclick="openModal();currentSlide(4)" alt="bookbag" class="img-thumbnail hover-shadow cursor">
-		</div>
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/purp-pink-sky.jpg" onclick="openModal();currentSlide(5)" alt="blackStreet" class="img-thumbnail hover-shadow cursor">
-		</div>
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/mountain.jpg" onclick="openModal();currentSlide(6)" alt="City" class="img-thumbnail hover-shadow cursor">
-		</div>
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/woods.jpg" onclick="openModal();currentSlide(7)" alt="City" class="img-thumbnail hover-shadow cursor">
-		</div>
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/tree-speed.jpg" onclick="openModal();currentSlide(8)" alt="City" class="img-thumbnail hover-shadow cursor">
-		</div>
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/howling.jpg" onclick="openModal();currentSlide(9)" alt="City" class="img-thumbnail hover-shadow cursor">
-		</div>
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/specs.jpg" onclick="openModal();currentSlide(10)" alt="City" class="img-thumbnail hover-shadow cursor">
-		</div>
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/flash.jpg" onclick="openModal();currentSlide(11)" alt="City" class="img-thumbnail hover-shadow cursor">
-		</div>
-		<div class="col-lg-4 col-sm-6 imgpad">
-			<img src="images/shooting.jpg" onclick="openModal();currentSlide(12)" alt="City" class="img-thumbnail hover-shadow cursor">
-		</div>
+		<% posts.forEach(function(post) { %>
+			<div class="col-lg-4 col-sm-6 imgpad">
+				<a href="/gallery/<%= post._id %>">
+					<img src="<%= post.image %>" onclick="openModal();currentSlide(1)" alt="<%= post.title %> Thumbnail" class="img-thumbnail hover-shadow cursor">
+				</a>
+			</div>
+		<% }); %>
 	<hr>
+	</div>
 
 
 	<div class="row">
