@@ -1,0 +1,14 @@
+<% include ../partials/header %>
+
+<h1>New Post Form</h1>
+<form action="/gallery" method="POST">
+
+	<input type="text" name="post[title]" placeholder="Post Title">
+	<input type="text" name="post[image]" placeholder="Post Image URL">
+	<input type="text" name="post[description]" placeholder="Post Description">
+	<textarea name="post[body]"></textarea>
+	<button>Submit</button>
+
+</form>
+
+<% include ../partials/footer %>

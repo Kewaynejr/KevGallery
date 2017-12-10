@@ -1,0 +1,253 @@
+<% include partials/header %>
+
+<nav class="navbar navbar-expand-lg navbar-black bg-black">
+  <a class="navbar-brand" href="#"><img src="images/logo.jpg" height="20px" width="130px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><button type="button" class="btn btn-outline-warning btn-sm active">Home</button><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><button type="button" class="btn btn-outline-warning btn-sm">Features</button></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><button type="button" class="btn btn-outline-warning btn-sm">News</button></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><button type="button" class="btn btn-outline-warning btn-sm">Join Our Movement</button></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+	<div class="jumbotron">
+		<h1 class="font"><b>KVNGALXY</b></h1>
+		<p class="pfront"><b>Imagine this...</b></p>
+		<a href="Create.html"><button type="button" class="btn btn-outline-warning">Find Us</button></a>
+		<a href="Create.html"><button type="button" class="btn btn-outline-warning">Explore</button></a>
+	</div>
+	<hr>
+
+	<div class="row">
+		<div class="col-lg-6 col-sm-6 col-xs-3 imgpad1">
+			<img src="images/nasa-globe.jpg" class="img-thumbnail">
+		</div>
+		<div class="col-lg-6 col-sm-6 col-xs-3 imgpad1">
+			<h3 class="font">A message from CEO Kevin R.</h3>
+			<q>KVN Galaxy consists of many photographers and scientists collectively creating a movement that gathers useful information to better understand a world outside of our own. Through non-edited high definition photography, which is taken with state of the art equiptment, KVN Galaxy has will shed light on what we deem to be in the dark. By subscribing to this web experience, you will become a part of the KVN Galaxy project. This means you will have access to top secret photos(beyond what the naked eye can see), daily insight on new discovery, and also chances to win state of the art equipment for personal research.</q>
+			<br>
+			<a href="Create.html"><button type="button" class="btn btn-outline-warning" id="btnpad">Subscribe Here</button></a>
+		</div>
+
+	</div>
+	<hr>
+
+	<div class="row">
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/blueshirt-blackbag.jpg" onclick="openModal();currentSlide(1)" alt="bookbag" class="img-thumbnail hover-shadow cursor">
+		</div>
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/black-white.jpg" onclick="openModal();currentSlide(2)" alt="blackStreet" class="img-thumbnail hover-shadow cursor">
+		</div>
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/city-lights.jpg" onclick="openModal();currentSlide(3)" alt="City" class="img-thumbnail hover-shadow cursor">
+		</div>
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/chair-computer.jpg" onclick="openModal();currentSlide(4)" alt="bookbag" class="img-thumbnail hover-shadow cursor">
+		</div>
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/purp-pink-sky.jpg" onclick="openModal();currentSlide(5)" alt="blackStreet" class="img-thumbnail hover-shadow cursor">
+		</div>
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/mountain.jpg" onclick="openModal();currentSlide(6)" alt="City" class="img-thumbnail hover-shadow cursor">
+		</div>
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/woods.jpg" onclick="openModal();currentSlide(7)" alt="City" class="img-thumbnail hover-shadow cursor">
+		</div>
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/tree-speed.jpg" onclick="openModal();currentSlide(8)" alt="City" class="img-thumbnail hover-shadow cursor">
+		</div>
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/howling.jpg" onclick="openModal();currentSlide(9)" alt="City" class="img-thumbnail hover-shadow cursor">
+		</div>
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/specs.jpg" onclick="openModal();currentSlide(10)" alt="City" class="img-thumbnail hover-shadow cursor">
+		</div>
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/flash.jpg" onclick="openModal();currentSlide(11)" alt="City" class="img-thumbnail hover-shadow cursor">
+		</div>
+		<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/shooting.jpg" onclick="openModal();currentSlide(12)" alt="City" class="img-thumbnail hover-shadow cursor">
+		</div>
+	<hr>
+
+
+	<div class="row">
+		<div class="col-lg-12 col-sm-12 imgpad">
+			<video width="100%" controls autoplay loop>
+				<source src="galaxy-535.vid" type="video/mp4">
+				<source src="galaxy-535.ogg" type="video/ogg">
+			</video>
+			<hr>
+			<h1 class="font"><center>More About Us</center></h1>
+			<hr class="hr2">
+		</div>
+			<div class="cardpad col-lg-4 col-sm-6 card text-white bg-secondary mb-3" style="max-width: 22rem;">
+ 			 		<div class="card-header">Why we do it?</div>
+  				<div class="card-body">
+    				<h4 class="card-title">You deserve to know</h4>
+    				<p class="card-text">We believe that you deserve to know everything about your world and everything beyond it. This will also raise conversations on space colonization and what we can do to improve it.</p>
+    				<br>
+    				Subscribe to become a part of our movement, you will receive daily updates, weekly TOP SECRET photos, and a chance to receive state of the art equiptment for personal research.
+    				<hr>
+    				<br>
+    				<button type="button" class="btn btn-outline-warning">Subscribe Here</button>
+  				</div>
+			</div>
+			<div class="cardpad col-lg-4 col-sm-6 card text-white bg-warning mb-3" style="max-width: 22rem;">
+  					<div class="card-header">Where we're located</div>
+  				<div class="card-body">
+   					<h4 class="card-title">56872 W Rochester Dr.</h4>
+    				<p class="card-text">We are rapidly growing, with one building in mid Kansas and two under construction in the Kansas City metropolitan area. We are actively recruiting researchers, photographers, and scientists.</p>
+    				<br>
+    				If you're qualified and interested in becoming a part of our innovative and forward thinking team, we'd love to hear from you! Apply today!
+    				<hr class="hr2">
+    				<br>
+    				<button type="button" class="btn btn-outline-secondary">Apply Here</button>
+  				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 imgpad">
+			<img src="images/our-location.jpg" onclick="openModal();currentSlide(13)" class="img-thumbnail hover-shadow cursor imgpad1 imgr">
+		</div>
+
+		</div>
+</div>
+<hr class="hr2">
+<i class="fa fa-twitter"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-facebook"></i>
+
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="images/blueshirt-blackbag.jpg" width="100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="images/black-white.jpg" width="100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="images/city-lights.jpg" width="100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="images/chair-computer.jpg" width="100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="images/purp-pink-sky.jpg" width="100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="images/mountain.jpg" width="100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="images/woods.jpg" width="100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="images/tree-speed.jpg" width="100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="images/howling.jpg" width="100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="images/specs.jpg" width="100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="images/flash.jpg" width="100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="images/shooting.jpg" width="100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 12</div>
+      <img src="images/our-location.jpg" width="100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+   	<div class="caption-container">
+      	<p id="caption"></p>
+    </div>
+</div>
+
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<% include partials/footer %>

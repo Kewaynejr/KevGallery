@@ -1,0 +1,27 @@
+{
+  "name": "kevgallery",
+  "version": "1.0.0",
+  "description": "Gallery/Blog hosted on NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kewaynejr/KevGallery.git"
+  },
+  "author": "Kevin Regular",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kewaynejr/KevGallery/issues"
+  },
+  "homepage": "https://github.com/Kewaynejr/KevGallery#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-sanitizer": "^1.0.2",
+    "method-override": "^2.3.10",
+    "mongoose": "^4.13.6"
+  }
+}
